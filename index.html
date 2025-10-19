@@ -1,0 +1,297 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>STS Nexus — Philippine Biodiversity</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <div class="brand">
+        <div class="brand-mark">🌿</div>
+        <div class="brand-name">
+          <strong>GaBonity</strong>
+          <small>Philippine Biodiversity</small>
+        </div>
+      </div>
+
+      <nav class="nav" id="mainNav">
+        <a href="#home">Home</a>
+        <a href="#highlights">Topics</a>
+        <a href="#voices">Voices</a>
+        <a href="#places">Places</a>
+        <a href="#quiz">Quiz</a>
+        <a href="#about">About</a>
+      </nav>
+
+      <div class="header-actions">
+        <button id="menuToggle" class="icon-btn mobile-only" aria-label="Open menu">☰</button>
+      </div>
+    </div>
+
+    <div id="mobileNav" class="mobile-nav" aria-hidden="true">
+      <a href="#home">Home</a>
+      <a href="#highlights">Topics</a>
+
+      <a href="#voices">Voices</a>
+      <a href="#places">Places</a>
+      <a href="#quiz">Quiz</a>
+      <a href="#about">About</a>
+    </div>
+  </header>
+
+  <!-- HERO -->
+  <section id="home" class="hero">
+    <div class="hero-overlay"></div>
+    <div class="container hero-inner">
+      <div class="hero-left">
+        <h1>Protect Philippine Biodiversity</h1>
+        <p class="lead">From the Philippine Eagle to vibrant coral reefs — explore species, places, and practical steps to protect them.</p>
+        <div class="hero-ctas">
+          <a class="btn primary" href="#highlights">Explore Topics</a>
+          <a class="btn ghost" href="#quiz">Take the Quiz</a>
+        </div>
+        <div class="hero-stats" aria-hidden="true">
+          <div><strong>~52,000</strong><span>species recorded</span></div>
+          <div><strong>1,100+</strong><span>endemic species</span></div>
+        </div>
+      </div>
+
+      <div class="hero-right">
+        <div id="heroCarousel" class="carousel" aria-roledescription="carousel">
+          <div class="carousel-track">
+            <img src="images/hero-1.jpg" alt="Philippine forest">
+            <img src="images/hero-2.jpg" alt="Philippine eagle">
+            <img src="images/hero-3.jpg" alt="coral reef">
+          </div>
+          <div class="carousel-controls">
+            <button id="prevHero" class="small" aria-label="Previous">◀</button>
+            <button id="nextHero" class="small" aria-label="Next">▶</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- HIGHLIGHTS -->
+<section id="highlights" class="highlights container-section">
+  <div class="container">
+    <h2>Key Topics</h2>
+    <input type="text" id="searchBox" placeholder="Search topics..." style="padding:6px;width:100%;max-width:320px;margin-bottom:12px;">
+
+    <div class="h-scroll-wrap">
+      <button class="scroll-btn left" data-target="hScroll" aria-label="Scroll left">‹</button>
+
+      <div id="hScroll" class="h-scroll">
+        
+        <!-- CARD 1 -->
+        <article class="h-card">
+          <img src="images/habitat.jpg" alt="Habitat Loss">
+          <div class="h-card-body">
+            <h3>Habitat Loss</h3>
+            <p class="summary">Deforestation, mining, and land expansion fragment ecosystems.</p>
+            <div class="more-text">
+              <p>
+                Forests in the Philippines are rapidly disappearing due to illegal logging, mining, and land conversion.
+                These activities destroy homes of countless species, increase flooding, and reduce carbon absorption.
+                Technology can help track deforestation and promote sustainable reforestation practices.
+              </p>
+            </div>
+            <button class="read-more-btn">Read More</button>
+          </div>
+        </article>
+
+        <!-- CARD 2 -->
+        <article class="h-card">
+          <img src="images/endangered.jpg" alt="Endangered Species">
+          <div class="h-card-body">
+            <h3>Endangered Species</h3>
+            <p class="summary">Philippine Eagle, Tamaraw, and others face extinction risks.</p>
+            <div class="more-text">
+              <p>
+                The Philippine Eagle, Tamaraw, and Visayan Warty Pig are endangered. 
+                Conservation programs use satellite tracking, DNA analysis, and breeding technologies 
+                to ensure their survival — safeguarding the country’s ecological balance.
+              </p>
+            </div>
+            <button class="read-more-btn">Read More</button>
+          </div>
+        </article>
+
+        <!-- CARD 3 -->
+        <article class="h-card">
+          <img src="images/marine.jpg" alt="Marine Ecosystems">
+          <div class="h-card-body">
+            <h3>Marine Ecosystems</h3>
+            <p class="summary">Coral reefs and fisheries are crucial but vulnerable.</p>
+            <div class="more-text">
+              <p>
+                Philippine coral reefs are biodiversity hotspots. Unfortunately, pollution and overfishing threaten them. 
+                Local fisherfolk now collaborate with scientists to restore coral reefs using artificial structures 
+                and sustainable fishing technologies.
+              </p>
+            </div>
+            <button class="read-more-btn">Read More</button>
+          </div>
+        </article>
+
+        <!-- CARD 4 -->
+        <article class="h-card">
+          <img src="images/indigenous.jpg" alt="Indigenous Knowledge">
+          <div class="h-card-body">
+            <h3>Indigenous Knowledge</h3>
+            <p class="summary">Local communities store conservation wisdom.</p>
+            <div class="more-text">
+              <p>
+                Indigenous peoples have preserved ecological wisdom for generations. 
+                Combining traditional forest management with modern science can strengthen 
+                conservation and sustainable practices in the Philippines.
+              </p>
+            </div>
+            <button class="read-more-btn">Read More</button>
+          </div>
+        </article>
+
+        <!-- CARD 5 -->
+        <article class="h-card">
+          <img src="images/conservation.jpg" alt="Conservation Solutions">
+          <div class="h-card-body">
+            <h3>Conservation Solutions</h3>
+            <p class="summary">Protected areas, marine sanctuaries, and community action.</p>
+            <div class="more-text">
+              <p>
+                From renewable energy to smart agriculture, technology is reshaping conservation efforts. 
+                The challenge is ensuring that progress promotes balance between human development 
+                and biodiversity protection.
+              </p>
+            </div>
+            <button class="read-more-btn">Read More</button>
+          </div>
+        </article>
+
+      </div>
+
+      <button class="scroll-btn right" data-target="hScroll" aria-label="Scroll right">›</button>
+    </div>
+  </div>
+</section>
+
+  <!-- ADVERTISEMENT / CAMPAIGN -->
+  <section id="ad" class="ad container-section">
+    <div class="container ad-inner">
+      <h2>🌏 Join the #SaveBiodiversity Movement</h2>
+      <p>Be part of local clean-up drives, tree planting, and sustainable projects. Small actions, when multiplied, can protect the natural heritage of the Philippines.</p>
+      <a href="https://wwf.org.ph/" target="_blank" class="btn primary">Learn More</a>
+    </div>
+  </section>
+
+  <!-- VOICES -->
+ <section id="voices" class="voices container-section">
+  <div class="container voices-inner">
+    <div class="voices-media">
+      <img src="images/expert.jpg" alt="Expert" class="voices-photo">
+    </div>
+    <div class="voices-text">
+      <h2>Voices from the Field</h2>
+      <blockquote id="voiceQuote">
+        "Community-based conservation in Palawan has restored mangroves and improved fish catch — both people and nature benefit."
+      </blockquote>
+      <div class="voice-meta"><strong>Dr. Liza Cruz</strong><span> — Conservation Biologist</span></div>
+      <p class="small">Read more about community conservation projects and how science supports local action.</p>
+      
+      <!-- ✅ Updated button with real article link -->
+      <a href="https://news.mongabay.com/2022/08/healthy-mangroves-build-a-resilient-community-in-the-philippines-palawan/" 
+         target="_blank" 
+         rel="noopener" 
+         class="btn small">
+         See Projects
+      </a>
+    </div>
+  </div>
+</section>
+
+
+  <!-- PLACES -->
+  <section id="places" class="places container-section">
+    <div class="container">
+      <h2>See Biodiversity In Action</h2>
+      <div class="places-grid">
+        <figure class="place-card">
+          <img src="images/palawan.jpg" alt="Palawan">
+          <figcaption>
+            <h3>Palawan Reefs</h3><p>World-class marine biodiversity.</p>
+          </figcaption>
+        </figure>
+        <figure class="place-card">
+          <img src="images/apo.jpg" alt="Apo Reef">
+          <figcaption>
+            <h3>Apo Reef</h3><p>Important marine sanctuary and coral systems.</p>
+          </figcaption>
+        </figure>
+        <figure class="place-card">
+          <img src="images/sierra.jpg" alt="Sierra Madre">
+          <figcaption>
+            <h3>Sierra Madre</h3><p>Forest backbone supporting species & communities.</p>
+          </figcaption>
+        </figure>
+        <figure class="place-card">
+          <img src="images/mountapo.jpg" alt="Mount Apo">
+          <figcaption>
+            <h3>Mount Apo</h3><p>Highest peak with unique montane biodiversity.</p>
+          </figcaption>
+        </figure>
+      </div>
+    </div>
+  </section>
+
+  <!-- QUIZ -->
+  <section id="quiz" class="quiz container-section">
+    <div class="container">
+      <h2>Test Your Knowledge</h2>
+      <p>How much do you know about Philippine biodiversity?</p>
+      <div id="quizArea" class="quiz-area"></div>
+      <div class="quiz-actions">
+        <button id="submitQuiz" class="btn primary">Submit Answers</button>
+        <div id="quizResult" class="quiz-result"></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ABOUT -->
+  <section id="about" class="about container-section">
+    <div class="container about-inner">
+      <h2>About STS Nexus</h2>
+      <p>STS Nexus connects science, technology and society — focusing on biodiversity education and practical conservation steps for students and communities.</p>
+      <div class="staff">
+        <div><strong>Editor:</strong> MingMing</div>
+        <div><strong>Content:</strong> Aso namin</div>
+        <div><strong>Design:</strong> Yung pusa ng kapit bahay</div>
+        <div><strong>Dev:</strong> John Maverick Lawig</div>
+      </div>
+    </div>
+  </section>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <div>© 2025 STS Nexus — Philippine Biodiversity Project</div>
+      <div class="social">
+        <a href="#" aria-label="facebook">FB</a> • <a href="#" aria-label="twitter">TW</a> • <a href="#" aria-label="instagram">IG</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="mavs.js"></script>
+  <script>
+  // Search Functionality
+  document.getElementById('searchBox').addEventListener('keyup', function() {
+    const query = this.value.toLowerCase();
+    document.querySelectorAll('.h-card').forEach(card => {
+      card.style.display = card.textContent.toLowerCase().includes(query) ? 'block' : 'none';
+    });
+  });
+  </script>
+</body>
+</html>
